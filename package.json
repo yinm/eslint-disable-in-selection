@@ -1,0 +1,32 @@
+{
+  "name": "eslint-disable-in-selection",
+  "displayName": "eslint-disable-in-selection",
+  "description": "Wrap ESLint disable and enable comments around selected lines.",
+  "version": "0.0.1",
+  "publisher": "yinm",
+  "engines": {
+    "vscode": "^1.22.0"
+  },
+  "categories": [
+    "Linters"
+  ],
+  "activationEvents": [
+    "onCommand:eslint-disable-in-selection.wrapComments"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "eslint-disable-in-selection.wrapComments",
+        "title": "ESLint disable in selection"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.63.1",
+    "typescript": "^4.5.5"
+  }
+}
